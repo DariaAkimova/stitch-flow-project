@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link rel="preload" href="/fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+  <link rel="icon" href="favicon.ico"> 32×32 -->
+  <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="icon" href="img/favicons/192.png" type="image/png">
+  <link rel="icon" href="img/favicons/512.png" type="image/png"> -->
+  <title>Авторская одежда с ручной вышивкой</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <a class="header__logo-img logo" href="#">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/logo_desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo_tablet.svg">
+            <img class="logo__img" src="img/logo_mobile.svg" width="107" height="30" alt="Name">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened no-js">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#about-us-section">О нас</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#examples">Примеры работ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#order">Сделать заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-container no-js">
+    <h1 class="visually-hidden">Stitch flow</h1>
+    <section class="main-container__section promo">
+      <div class="promo__background"></div>
+      <div class="container">
+        <header class="promo__header">
+          <h2 class="promo__title section-title section-title--contrast">Авторская одежда с ручной вышивкой</h2>
+          <div class="promo__slogan promo-text">Мы вышиваем, чтобы тебя заметили</div>
+        </header>
+        <!-- <a class="promo__button button" href="#examples">Перейти в каталог</a> -->
+      </div>
+    </section>
+    <section class="main-container__section about-us" id="about-us-section">
+      <div class="line">
+        <div class="line__wrapper">
+          <h2 class="about-us__title line__title section-title">О нас</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="about-us__description"> Здравтствуйте, меня зовут Дарья, я основатель "Stich flow"-
+          маленькой мастерской по пошиву одежды. Отличительная черта изделий - ручная вышивка.
+          Сейчас занимаемся изготовлением фатиновых юбок-пачек. <br>
+          Я искренне считаю, что наши юбки получаются по-настоящему волшебными,
+          притягивают взгляды и радуют тебя своей воздушностью и неповторимостью. <br>
+
+        </p>
+      </div>
+    </section>
+    <section class="main-container__section advantages">
+      <div class="container">
+        <h2 class="advantages__title section-title">Почему именно мы?</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--indiv">
+            <p class="advantages__description"> Индивидуальный подход. Размер, цвет, узор - все обсуждается!
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--quality">
+            <p class="advantages__description">Качественная вышивка.
+              Можно спокойно стирать и носить изделие!
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--repair">
+            <p class="advantages__description">Если в процессе эксплуатации вышивка немного провется
+              - есть возможность отреставрировать изделие.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--embroidery">
+            <p class="advantages__description">Неповторимая вышивка для каждой! </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main-container__section examples" id="examples">
+
+      <div class="line">
+        <div class="line__wrapper">
+          <h2 class="examples__title line__title section-title">Примеры работ</h2>
+        </div>
+      </div>
+
+      <ul class="examples__list all-products">
+        <li class="all-products__item card">
+          <div class="container">
+
+            <div class="example__visualisation visualisation slider no-js">
+              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                aria-label="Вернуться к предыдущему слайду"></button>
+              <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                aria-label="Перейти к следующему слайду"></button>
+              <ul class="visualisation__items slider__items">
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/blue-skirt-1-desktop@1x.webp 1x, img/catalog/blue-skirt-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/blue-skirt-1-tablet@1x.webp 1x, img/catalog/blue-skirt-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/blue-skirt-1-mobile@1x.webp 1x,img/catalog/blue-skirt-1-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/blue-skirt-1-desktop@1x.jpg 1x, img/catalog/blue-skirt-1-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/blue-skirt-1-tablet@1x.jpg 1x, img/catalog/blue-skirt-1-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/blue-skirt-1-mobile@1x.jpg"
+                      srcset="img/catalog/blue-skirt-1-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Бирюзовая юбка с оранжевой вышивкой">
+                  </picture>
+                </li>
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/blue-skirt-2-desktop@1x.webp 1x, img/catalog/blue-skirt-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/blue-skirt-2-tablet@1x.webp 1x, img/catalog/blue-skirt-2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/blue-skirt-2-mobile@1x.webp 1x, img/catalog/blue-skirt-2-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/blue-skirt-2-desktop@1x.jpg 1x, img/catalog/blue-skirt-2-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/blue-skirt-2-tablet@1x.jpg 1x, img/catalog/blue-skirt-2-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/blue-skirt-2-mobile@1x.jpg"
+                      srcset="img/catalog/blue-skirt-2-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Оранжевая вышивка на бирюзовой юбке">
+                  </picture>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="all-products__item card">
+          <div class="container">
+
+            <div class="example__visualisation visualisation slider no-js">
+              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                aria-label="Вернуться к предыдущему слайду"></button>
+              <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                aria-label="Перейти к следующему слайду"></button>
+
+              <ul class="visualisation__items slider__items">
+
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/pink-skirt-1-desktop@1x.webp 1x, img/catalog/pink-skirt-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/pink-skirt-1-tablet@1x.webp 1x, img/catalog/pink-skirt-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/pink-skirt-1-mobile@1x.webp 1x, img/catalog/pink-skirt-1-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/pink-skirt-1-desktop@1x.jpg 1x, img/catalog/pink-skirt-1-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/pink-skirt-1-tablet@1x.jpg 1x, img/catalog/pink-skirt-1-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/pink-skirt-1-mobile@1x.jpg"
+                      srcset="img/catalog/pink-skirt-1-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Персиковая юбка с цветочной вышивкой">
+                  </picture>
+                </li>
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/pink-skirt-2-desktop@1x.webp 1x, img/catalog/pink-skirt-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/pink-skirt-2-tablet@1x.webp 1x, img/catalog/pink-skirt-2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/pink-skirt-2-mobile@1x.webp 1x,img/catalog/pink-skirt-2-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/pink-skirt-2-desktop@1x.jpg 1x, img/catalog/pink-skirt-2-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/pink-skirt-2-tablet@1x.jpg 1x, img/catalog/pink-skirt-2-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/pink-skirt-2-mobile@1x.jpg"
+                      srcset="img/catalog/pink-skirt-2-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Цветочная вышивка на персиковой юбке">
+                  </picture>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="all-products__item card">
+          <div class="container">
+
+            <div class="example__visualisation visualisation slider no-js">
+              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                aria-label="Вернуться к предыдущему слайду"></button>
+              <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                aria-label="Перейти к следующему слайду"></button>
+
+              <ul class="visualisation__items slider__items">
+
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/grey-blue-skirt-1-desktop@1x.webp 1x, img/catalog/grey-blue-skirt-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/grey-blue-skirt-1-tablet@1x.webp 1x, img/catalog/grey-blue-skirt-1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/grey-blue-skirt-1-mobile@1x.webp 1x, img/catalog/grey-blue-skirt-1-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/grey-blue-skirt-1-desktop@1x.jpg 1x, img/catalog/grey-blue-skirt-1-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/grey-blue-skirt-1-tablet@1x.jpg 1x, img/catalog/grey-blue-skirt-1-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/grey-blue-skirt-1-mobile@1x.jpg"
+                      srcset="img/catalog/grey-blue-skirt-1-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Серо-голубая юбка со светлой вышивкой">
+                  </picture>
+                </li>
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/grey-blue-skirt-2-desktop@1x.webp 1x, img/catalog/grey-blue-skirt-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/grey-blue-skirt-2-tablet@1x.webp 1x, img/catalog/grey-blue-skirt-2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/grey-blue-skirt-2-mobile@1x.webp 1x,img/catalog/grey-blue-skirt-2-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/grey-blue-skirt-2-desktop@1x.jpg 1x, img/catalog/grey-blue-skirt-2-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/grey-blue-skirt-2-tablet@1x.jpg 1x, img/catalog/grey-blue-skirt-2-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/grey-blue-skirt-2-mobile@1x.jpg"
+                      srcset="img/catalog/grey-blue-skirt-2-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Серо-голубая юбка со светлой вышивкой">
+                  </picture>
+                </li>
+                <li class="visualisation__item slider__item">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/catalog/grey-blue-skirt-3-desktop@1x.webp 1x, img/catalog/grey-blue-skirt-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/catalog/grey-blue-skirt-3-tablet@1x.webp 1x, img/catalog/grey-blue-skirt-3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/catalog/grey-blue-skirt-3-mobile@1x.webp 1x,img/catalog/grey-blue-skirt-3-mobile@2x.webp 2x"> -->
+
+                    <source media="(min-width:1440px)"
+                      srcset="img/catalog/grey-blue-skirt-3-desktop@1x.jpg 1x, img/catalog/grey-blue-skirt-3-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)"
+                      srcset="img/catalog/grey-blue-skirt-3-tablet@1x.jpg 1x, img/catalog/grey-blue-skirt-3-tablet@2x.jpg 2x">
+                    <img class="visualisation__image " src="img/catalog/grey-blue-skirt-3-mobile@1x.jpg"
+                      srcset="img/catalog/grey-blue-skirt-3-mobile@2x.jpg 2x" width="280" height="320"
+                      alt="Светлая вышивка на серо-голубой юбке">
+                  </picture>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <section class="main-container__section order" id="order">
+      <div class="line">
+        <div class="line__wrapper">
+          <h2 class="order__title line__title section-title">Как сделать заказ</h2>
+        </div>
+      </div>
+      <div class="container">
+        <p class="order__description">Чтобы обсудить детали заказа или задать все интересующие вопросы можно:
+        </p>
+        <ul class="order__options order-options">
+          <li class="order-options__item order-options__item--mail order-option">
+            <p class="order-options__description">Написать мне сообщение <a class="order-option__link link" href="#">ВКонтакте</a>, <a
+                class="order-option__link link" href="#">в Телеграме</a> или
+              на e-mail <span class="important-text">stich-flow@mail.ru</span></p>
+          </li>
+          <li class="order-options__item order-options__item--form order-option">
+            <p class="order-options__description">Заполнить форму обратной связи и я сама
+              вам напишу.</p>
+          </li>
+        </ul>
+
+        <form action="#" method="post" class="order__form form">
+          <fieldset class="form__user-info user-info">
+            <label class="user-info__field"><span class="user-info__label"> Имя:*</span>
+              <input class="user-info__input input" type="text" name="user-name" placeholder="Имя" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__contacts-form contacts-form">
+            <label class="contacts-form__field"><span class="contacts-form__label">
+                e-mail:*</span>
+              <input class="contacts-form__input input input--email" type="email" name="email"
+                placeholder="mail@mail.com" required>
+            </label>
+            <label class="contacts-form__field"><span class="contacts-form__label">
+                Телефон:*</span>
+              <input class="contacts-form__input input input--phone" type="tel" name="tel"
+                placeholder="8 (000) 000-00-00" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__comments comments">
+            <h3 class="comments__title">Ваше сообщение
+            </h3>
+            <textarea class="comments__field" name="comments">
+            </textarea>
+          </fieldset>
+          <fieldset class="form__personal-agree personal-agree">
+            <label class="personal-agree__field">
+              <input type="checkbox" name="personal-agree" class="personal-agree__checkbox input" required>
+              <span class="personal-agree__label important-text">Я согласен на обработку персональных данных </span>
+
+            </label>
+          </fieldset>
+          <div class="form__validation-message validation-error hidden">
+            <p class="validation-error__message">Пожалуйста, заполните все обязательные поля и повторите отправку заявки
+            </p>
+          </div>
+          <div class="form__footer">
+            <div class="form__buttons buttons-wrapper">
+              <button class="form__submit button" type="submit">Отправить</button>
+              <button class="form__reset button button--secondary" type="reset">Сбросить значения</button>
+            </div>
+            <p class="form__legend">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="container">
+      <section class="main-container__section delivery-info">
+        <div class="delivery-info__wrapper">
+          <h2 class="delivery-info__title section-subtitle">Немного о доставке</h2>
+          <p class="delivery-info__text"><span class="important-text">По
+              Санкт-Петербургу доставка
+              бесплатная.</span><br> В другие города России
+            отправляю транспортными компаниями или Почтой России (стоимость доставки расчитывается в соответствиями с
+            тарифами выбранной компани).
+          </p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <section class="footer__info">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer__logo-link" href="#">
+            <img src="img/logo_mobile.svg" width="107" height="30" alt="Логотип Stitch flow">
+          </a>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#" aria-label="Аккаунт Stitch flow ВКонтакте">
+                  <svg class="social__icon" width="28" height="22">
+                    <use href="img/sprite.svg#icon-vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="#" aria-label="Аккаунт Stitch flow в Телеграме">
+                  <svg class="social__icon" width="28" height="22">
+                    <use href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  </footer>
+  <button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+  <!-- Сообщение об успешном создании заявки -->
+  <template id="success">
+    <div class="success">
+      <p class="success__message">Здравствуйте, <span id="user-name"></span>!<br>Ваша заявка принята,
+        я свяжусь с вами для обсуждения деталей заказа.</p>
+    </div>
+  </template>
+
+  <!-- Сообщение об ошибке создания заявки -->
+  <template id="error">
+    <div class="error">
+      <div class="error__wrapper">
+        <p class="error__message">Ошибка! Ваше сообщение не отправлено, попробуйте снова.</p>
+        <button type="button" class="error__button">Попробовать снова</button>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

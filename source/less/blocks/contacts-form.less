@@ -1,0 +1,86 @@
+.contacts-form {
+  .fieldset-style();
+  margin-right: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // @media (max-width: @mobile-width-only) {
+  //   margin-left: 0;
+  // }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+// .contacts-form__wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   margin-top: 38px;
+
+//   @media (min-width: @tablet-width) {
+//     margin-top: 77px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     flex-direction: row;
+//   }
+// }
+
+// .contacts-form__title {
+//   margin-bottom: 35px;
+// }
+
+.contacts-form__field {
+  position: relative;
+  .input-text(@light-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 250px;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 28px;
+      margin-right: 10px;
+    }
+
+     }
+
+  @media (min-width: @tablet-width) {
+    max-width: 640px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.contacts-form__label {
+  white-space: nowrap;
+  letter-spacing: -0.3px;
+}
+
+.contacts-form__input {
+  margin-left: 10px;
+
+  letter-spacing: -0.3px;
+
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   min-width: 495px;
+  // }
+}

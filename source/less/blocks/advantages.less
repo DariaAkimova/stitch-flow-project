@@ -1,0 +1,120 @@
+// .advantages {
+//   font-family: @font-arial;
+// }
+
+.advantages__title {
+  margin: 18px 0 41px;
+
+  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+  }
+}
+
+.advantages__list {
+  .list();
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 17px;
+
+  // @media (min-width: @tablet-width) {
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: auto auto;
+  //   grid-gap: 30px 60px;
+  // }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 10px;
+
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 79px;
+
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: 0;
+    background: center no-repeat;
+    background-size: cover;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 30px;
+      left: 15px;
+
+      justify-self: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  &--indiv::before {
+    background-image: url("../../img/icon_indiv.svg");
+  }
+
+  &--quality::before {
+    background-image: url("../../img/icon_quality.svg");
+  }
+
+  &--embroidery::before {
+    background-image: url("../../img/icon_embroidery.svg");
+  }
+
+  &--repair::before {
+    background-image: url("../../img/icon_repair.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 110px 0 0;
+    max-width: 160px;
+
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 170px;
+  }
+}
+
+.advantages__description {
+  margin: 4px 0;
+
+  line-height: 1.5;
+
+  width: 200px;
+
+  @media (max-width: @mobile-width-only) {
+    line-height: 1.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
+}

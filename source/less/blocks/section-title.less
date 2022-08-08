@@ -1,0 +1,24 @@
+.section-title {
+  font-family: @font-forum;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -1.2px;
+  line-height: 1;
+
+  &--contrast {
+    color: @white;
+
+    @media (min-width: @tablet-width) {
+      color: @light-black;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 54px;
+  }
+}

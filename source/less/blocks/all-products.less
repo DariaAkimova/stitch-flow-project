@@ -1,0 +1,14 @@
+.all-products {
+  .list();
+
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.all-products__item {
+  background-color: @light-color;
+  &:nth-child(odd) {
+    background-color: @light-pink;
+  }
+}

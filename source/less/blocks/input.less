@@ -1,0 +1,18 @@
+.input {
+  .input-box();
+  .input-text(@grey);
+
+  position: relative;
+
+  &:hover {
+    border: @input-hover-border;
+  }
+
+  &:focus {
+    border: @input-focus-border;
+  }
+}
+
+.input--error {
+  border: @input-error-border;
+  }

@@ -1,0 +1,18 @@
+.main-container {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}
+
+.main-container.no-js {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 230px;
+  }
+}
+
+.main-container__section {
+  margin-bottom: 40px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 100px;
+  }
+}

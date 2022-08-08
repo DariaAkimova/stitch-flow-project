@@ -1,0 +1,32 @@
+.error {
+  .modal-box();
+}
+
+.error__wrapper {
+  background-color: @white;
+  border: @input-error-border;
+
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 60%;
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+  }
+}
+
+.error__message {
+  .modal-message();
+}
+
+.error__button {
+  padding: 10px;
+
+  font-size: 1.2em;
+  font-weight: 600;
+  color: @light-black;
+  border: 2px solid @light-black;
+  background-color: #fff;
+  border-radius: 15px;
+}

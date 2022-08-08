@@ -1,0 +1,23 @@
+<svg width="105" height="100" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="102" width="107" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_33" stroke="null">
+   <g id="svg_34" stroke="null">
+    <ellipse ry="40.50995" rx="40.50995" id="svg_25" cy="51.12419" cx="53.89561" stroke-width="1.5" fill="#ffffff" stroke="#0d1821"/>
+    <rect stroke="#ffffff" id="svg_26" height="19.41167" width="98.47444" y="43.61212" x="2.76245" stroke-width="1.5" fill="#ffffff"/>
+    <text stroke="#ffffff" font-weight="normal" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="22" id="svg_6" y="59.04999" x="1.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#0d1821">stitch flow</text>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_28" y2="5.43318" x2="52.21458" y1="11.17009" x1="52.21458" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_29" y2="5.43318" x2="55.65672" y1="11.17009" x1="55.65672" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_30" y2="7.72794" x2="60.0113" y1="7.72794" x1="48.29076" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="7.72794" x2="60.0113" y1="7.72794" x1="48.29076" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <text stroke="#000" transform="matrix(10.599923133850098,0,0,1,-1041.5923924387462,0) " xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="20" id="svg_4" y="49.04999" x="98.68868" stroke-width="0" fill="#0d1821"/>
+   </g>
+  </g>
+ </g>
+</svg>
