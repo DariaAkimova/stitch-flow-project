@@ -1,65 +1,39 @@
-.footer {
-  grid-column: 1/-1;
-  grid-row: 3/4;
+// .footer {
+//   grid-column: 1/-1;
+//   grid-row: 3/4;
 
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto auto;
+//   }
+// }
 
 .footer > .container {
-  @media (min-width: @desktop-width) {
-    width: 100%;
-    grid-column: 1/-1;
-    grid-row: 1/2;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.contacts {
-  @media (min-width: @desktop-width) {
-    width: 565px;
-    background-color: @white;
+    @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .footer__contacts {
-  @media (min-width: @desktop-width) {
-    margin-top: 100px;
-  }
-}
-.footer__info {
-  margin: 7px 0 0;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-column: 1/-1;
-    grid-row: 2/3;
-
-    margin-top: 30px;
-  }
-}
-
-.footer__info .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    width: 300px;
   }
 }
 
 .footer__logo-link {
-  .footer-element-mobile(center, 32px 0 39px 0);
-
-  @media (min-width: @tablet-width) {
-    padding-top: 35px;
-  }
+  .footer-element-mobile(center,10px 0);
 }
 
 .footer__social {
@@ -72,14 +46,14 @@
   }
 }
 
-.footer__copyright-link {
-  .footer-element-mobile(space-between, 26px 0);
+// .footer__copyright-link {
+//   .footer-element-mobile(space-between, 26px 0);
 
-  align-items: center;
+//   align-items: center;
 
-  @media (min-width: @tablet-width) {
-    .footer-element(space-between);
-    width: 163px;
-    padding-bottom: 7px;
-  }
-}
+//   @media (min-width: @tablet-width) {
+//     .footer-element(space-between);
+//     width: 163px;
+//     padding-bottom: 7px;
+//   }
+// }
