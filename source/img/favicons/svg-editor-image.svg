@@ -1,0 +1,26 @@
+<svg width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="92" width="92" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title transform="translate(2,2) translate(-10,-5) ">Layer 1</title>
+  <g id="svg_33" stroke="null">
+   <g id="svg_34" stroke="null">
+    <ellipse ry="40.50995" rx="40.50995" id="svg_25" cy="48.12419" cx="45.89561" stroke-width="1.5" fill="#ffffff" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_28" y2="1.43318" x2="45.21458" y1="7.17009" x1="45.21458" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_29" y2="1.43318" x2="48.65672" y1="7.17009" x1="48.65672" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_30" y2="3.72794" x2="53.0113" y1="3.72794" x1="41.29076" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <line stroke-linecap="null" stroke-linejoin="null" id="svg_11" y2="3.72794" x2="53.0113" y1="3.72794" x1="41.29076" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none" stroke="#0d1821"/>
+    <text stroke="#0d1821" transform="matrix(2.7252871990203857,0,0,2.469176249641322,-57.79712116718292,-60.29451958026172) " xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="25" id="svg_7" y="51.294448" x="27.995993" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#0d1821">sf</text>
+   </g>
+   <g id="svg_3">
+    <g id="svg_4" fill="#000000" transform="matrix(0.0003433227590221577,0,0,-0.0003433227590221577,0,1.7578125) ">
+     <path stroke="null" id="svg_5" d="m303,5105c-79,-21 -126,-49 -184,-107c-90,-90 -132,-218 -111,-343c11,-69 48,-152 86,-194c16,-18 373,-350 383,-356c2,-1 -6,-59 -17,-131c-14,-91 -23,-227 -30,-464c-15,-484 -29,-742 -51,-935c-48,-415 -115,-671 -256,-980c-72,-156 -100,-237 -114,-327c-24,-154 9,-257 114,-355c184,-172 553,-266 1042,-267c234,0 338,10 528,50c192,41 315,87 432,159c204,127 270,299 178,467c-89,164 -370,297 -745,354c-136,21 -374,33 -415,22c-68,-18 -96,-106 -53,-161c27,-34 76,-47 176,-47c88,0 264,-21 387,-46c177,-35 354,-112 430,-185c39,-38 47,-51 47,-82c0,-97 -194,-211 -464,-272c-364,-82 -876,-58 -1206,57c-100,35 -141,58 -193,107c-48,45 -58,83 -46,168c10,68 31,126 134,358c183,415 263,898 280,1710c6,286 22,566 34,597c6,18 300,-247 2149,-1935c1726,-1576 2149,-1957 2176,-1962c69,-13 134,52 121,121c-5,27 -408,474 -2061,2284c-1130,1238 -2052,2255 -2049,2261c10,15 54,35 164,73c250,87 530,135 916,157c198,11 222,17 246,60c16,31 14,83 -6,112c-27,43 -71,51 -234,43c-494,-24 -911,-110 -1160,-242l-84,-44l-102,107c-111,117 -169,155 -265,173c-69,13 -114,12 -177,-5zm188,-221c15,-7 65,-55 112,-106l85,-92l-19,-28l-20,-27l-41,29c-56,41 -106,41 -147,-1c-42,-41 -42,-91 -2,-145c33,-45 194,-203 231,-228c65,-43 160,5 160,82c0,20 -9,51 -20,67c-23,35 -24,45 -7,69c13,17 122,-100 1218,-1300c662,-726 1222,-1339 1243,-1364l40,-45l-39,36c-2362,2154 -3037,2774 -3051,2801c-9,18 -17,55 -17,84c0,141 148,232 274,168z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
