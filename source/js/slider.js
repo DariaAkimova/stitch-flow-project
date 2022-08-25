@@ -3,7 +3,10 @@ import { makeFancybox } from "./modal-gallery.js";
 
 const MOBILE_SCREEN = window.matchMedia("(max-width: 767px)");
 const allSliders = document.querySelectorAll(".slider");
-const sliderContainers = [...document.querySelectorAll(".all-products__item")];
+const slidersList = document.querySelector(".all-products");
+const sliderContainers = [
+  ...slidersList.querySelectorAll(".all-products__item"),
+];
 const allSlides = [...document.querySelectorAll(".slider__item")];
 const exampleSection = document.querySelector(".examples");
 const exampleContainer = exampleSection.querySelector(".container");
@@ -47,14 +50,24 @@ const initSliders = () => {
   if (MOBILE_SCREEN.matches) {
     allSliders.forEach((slider) => {
       makeSlider(slider);
-       });
+    });
   } else {
     const allPhotosList = makeList(allSlides);
+    const allPhotosListItems = allPhotosList.querySelectorAll(
+      ".visualisation__item"
+    );
+    allPhotosListItems.forEach((item) => item.classList.remove("slider__item"));
+
     const allPhotosImages = allPhotosList.querySelectorAll(
       ".visualisation__image"
     );
-    allPhotosList.classList.add("slider__items", "slider__items--gallery-mode");
+    allPhotosList.classList.add(
+      "examples__items",
+      "examples__items--gallery-mode",
+      "visualisation"
+    );
 
+    slidersList.remove();
     removeList(sliderContainers);
 
     exampleContainer.appendChild(allPhotosList);

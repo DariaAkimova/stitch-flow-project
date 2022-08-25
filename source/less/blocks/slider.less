@@ -43,30 +43,8 @@
   .list();
   margin: 0;
 
-  &--gallery-mode {
-    @media (min-width: @tablet-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 500px;
-      grid-gap: 10px;
-
-      .slider__item {
-        width: 300px;
-        height: 300px;
-
-        &:nth-child(1n) {
-          background-color: aqua;
-        }
-
-        &:nth-child(2n) {
-          background-color: tomato;
-        }
-
-        &:nth-child(3n) {
-          background-color: darkblue;
-        }
-      }
-    }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
