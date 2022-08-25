@@ -50,11 +50,12 @@
 
   @media (min-width: @tablet-width) {
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
     line-height: 1.5;
+    font-size: 22px;
   }
 }
 
@@ -112,9 +113,11 @@
 
 .modal-message() {
   position: relative;
-  width: 70%;
-  margin: 5% auto;
   color: @basic-bordo-dark;
   font-size: 1.5em;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    width: 70%;
+  }
 }

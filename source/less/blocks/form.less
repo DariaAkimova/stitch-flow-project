@@ -27,11 +27,12 @@
   }
 }
 
-.form__user-info {
+.form__contacts {
+  margin-bottom: 10px;
 }
 
 .form__comments {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
@@ -49,6 +50,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
     align-items: start;
 
     margin-top: 20px;
@@ -61,6 +63,7 @@
 
     @media (min-width: @desktop-width) {
       width: 260px;
+      height: 45px;
     }
   }
 }
@@ -87,9 +90,12 @@
     margin-left: 61px;
 
     letter-spacing: 1px;
+
+    align-self: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 33px;
+    font-size: 19px;
   }
 }
