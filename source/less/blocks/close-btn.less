@@ -1,0 +1,26 @@
+.close-btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  width: 15px;
+  height: 15px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 15px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

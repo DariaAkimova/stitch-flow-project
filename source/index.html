@@ -277,7 +277,7 @@
           </li>
         </ul>
       </div>
-      
+
     </section>
     <section class="main-container__section order" id="order">
       <div class="line">
@@ -303,7 +303,7 @@
         <form action="form.php" method="post" class="order__form form">
           <fieldset class="form__user-info user-info">
             <label class="user-info__field"><span class="user-info__label"> Имя:*</span>
-              <input class="user-info__input input" type="text" name="user-name" placeholder="Имя" required>
+              <input class="user-info__input input input--name" type="text" name="user-name" placeholder="Имя" required>
             </label>
           </fieldset>
           <fieldset class="form__contacts-form contacts-form">
@@ -398,6 +398,21 @@
       </section>
   </footer>
   <button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+  <!-- Увеличенное фото, слайдер -->
+  <template id="fancybox">
+    <div class="fancybox-slider slider">
+      <!-- Временно без слайдера -->
+      
+      <!-- <button class="fancybox-slider__btn fancybox-slider__btn--left slider-control slider-control--prev"
+        aria-label="Вернуться к предыдущему слайду"></button>
+      <button class="fancybox-slider__btn fancybox-slider__btn--right slider-control slider-control--next"
+        aria-label="Перейти к следующему слайду"></button> -->
+        <button class="fancybox-slider__close-btn close-btn"
+        aria-label="Закрыть"></button>
+        <div class="fancybox-slider__img-box slider__item"></div>
+    </div>
+  </template>
 
   <!-- Сообщение об успешном создании заявки -->
   <template id="success">
