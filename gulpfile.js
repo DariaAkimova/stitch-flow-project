@@ -6,7 +6,8 @@ import csso from "postcss-csso";
 import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import htmlmin from "gulp-htmlmin";
-import terser from "gulp-terser";
+import webpack from "webpack-stream";
+// import phpmin from "@cedx/gulp-php-minify";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
@@ -27,14 +28,6 @@ export const styles = () => {
     .pipe(browser.stream());
 };
 
-// export const styles = () => {
-//   return gulp
-//     .src("source/less/style.less", { sourcemaps: true })
-//     .pipe(less())
-//     .pipe(gulp.dest("source/css", { sourcemaps: "." }))
-//     .pipe(browser.stream());
-// };
-
 //html
 
 const html = () => {
@@ -46,13 +39,37 @@ const html = () => {
 
 //scripts
 
-// export const scripts = () => {
+let webpackConfig = {
+  output: {
+    filename: "script.bundle.js",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: "/node__modules/",
+      },
+    ],
+  },
+};
+
+export const scripts = () => {
+  return gulp
+    .src("source/js/*.js")
+    .pipe(webpack(webpackConfig))
+    .pipe(gulp.dest("build/js"));
+};
+
+//php
+
+// export const php = () => {
 //   return gulp
-//     .src("source/js/*.js")
-//     .pipe(terser())
-//     .pipe(rename("script.min.js"))
-//     .pipe(gulp.dest("build/js"));
-// };
+//     .src("source/*.php", {read: false})
+//     .pipe(phpmin())
+//     .pipe(gulp.dest("build"));  
+//   }
+
 //images
 
 // const optimizeImages = () => {
@@ -104,7 +121,7 @@ const sprite = () => {
 
 export const copy = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}", "source/js/*.js", "source/*.php", "source/*.ico"], {
+    .src(["source/fonts/*.{woff2,woff}", "source/*.php", "source/*.ico"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
@@ -157,7 +174,7 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, svg, sprite, createWebp)
+  gulp.parallel(styles, html, scripts, php, svg, sprite, createWebp)
 );
 
 // Default
@@ -166,7 +183,8 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, svg, sprite, createWebp),
+  php,
+  gulp.parallel(styles, html, scripts, svg, sprite, createWebp),
   gulp.series(server, watcher)
 );
 
