@@ -41,7 +41,7 @@ function closeModal() {
 
 const makeFancybox = (evt) => {
   document.body.appendChild(fancyboxSlider);
-  const photoToShow = evt.target.cloneNode(true);
+  const photoToShow = evt.target.parentNode.cloneNode(true);
 
   if (fancyboxImageBox.hasChildNodes()) {
     fancyboxImageBox.removeChild(fancyboxImageBox.firstChild);

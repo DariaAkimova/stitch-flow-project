@@ -159,7 +159,7 @@ export const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  // gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
@@ -174,7 +174,7 @@ export const build = gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, scripts, php, svg, sprite, createWebp)
+  gulp.parallel(styles, html, scripts, svg, sprite, createWebp)
 );
 
 // Default
@@ -183,7 +183,6 @@ export default gulp.series(
   clean,
   copy,
   copyImages,
-  php,
   gulp.parallel(styles, html, scripts, svg, sprite, createWebp),
   gulp.series(server, watcher)
 );
