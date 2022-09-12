@@ -14,9 +14,10 @@ const hideFancybox = () => {
   fancyboxSlider.remove();
 };
 
-// const onModalClick = () => closeModal();
+const onModalClick = () => closeModal();
 
-const addListenerClick = () => document.addEventListener("click", closeModal);
+const addListenerClick = () =>
+  fancyboxSlider.addEventListener("click", closeModal);
 
 const onDocumentEscKeydown = (evt) => {
   if (evt.key === "Escape") {
@@ -28,13 +29,12 @@ const addListenerEscKeydown = () =>
   document.addEventListener("keydown", onDocumentEscKeydown);
 
 const removeAllListeners = () => {
-  document.removeEventListener("click", closeModal);
+  document.removeEventListener("click", onModalClick);
   document.removeEventListener("keydown", onDocumentEscKeydown);
 };
 
 function closeModal() {
-  // document.body.lastChild.remove();
-  hideFancybox;
+  hideFancybox();
 
   removeAllListeners();
 }
@@ -51,7 +51,7 @@ const makeFancybox = (evt) => {
 
   fancyboxCloseBtn.addEventListener("click", hideFancybox);
   addListenerClick();
-  // addListenerEscKeydown();
+  addListenerEscKeydown();
 };
 
 // Пока что сделать слайдер не получилось. Подамать еще.
