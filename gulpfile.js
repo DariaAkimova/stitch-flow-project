@@ -13,6 +13,7 @@ import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import del from "del";
 import browser from "browser-sync";
+import fileinclude from "gulp-file-include";
 
 // Styles
 
@@ -30,13 +31,26 @@ export const styles = () => {
 
 //html
 
-const html = () => {
+export const html = () => {
   return gulp
     .src("source/*.html")
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
 
+// export const htmlfull = () => {
+//   return gulp 
+//   .src(['source/*.html'])
+//   .pipe(fileinclude({
+//     prefix: '@@',
+//     basepath: '@file'
+//   }))
+//   .pipe(gulp.dest('build'));
+// }
 //scripts
 
 let webpackConfig = {
