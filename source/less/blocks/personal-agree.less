@@ -16,14 +16,27 @@
     position: absolute;
     content: "*";
     left: 100%;
+
+    @media (min-width: @tablet-width) {
+      top: -5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -8px;
+    }
   }
 }
 
 .personal-agree__label {
-    margin-left: 10px;
-    font-size: 10px;
+  margin-left: 10px;
+  font-size: 10px;
 
-    @media (min-width: @desktop-width) {
-        font-size: 20px;
-      }
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
+}
+
+.personal-agree__link {
+  font-weight: bold;
+  text-decoration: underline;
 }
