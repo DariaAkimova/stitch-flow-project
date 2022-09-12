@@ -46,25 +46,32 @@ export const html = () => {
 
 //scripts
 
-let webpackConfig = {
-  output: {
-    filename: "script.bundle.js",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: "babel-loader",
-        exclude: "/node__modules/",
-      },
-    ],
-  },
-};
+// let webpackConfig = {
+//   output: {
+//     filename: "script.bundle.js",
+//   },
+//   module: {
+//     rules: [
+//       {
+//         test: /\.js$/,
+//         loader: "babel-loader",
+//         exclude: "/node__modules/",
+//       },
+//     ],
+//   },
+// };
+
+// export const scripts = () => {
+//   return gulp
+//     .src("source/js/*.js")
+//     .pipe(webpack(webpackConfig))
+//     .pipe(gulp.dest("build/js"));
+// };
 
 export const scripts = () => {
   return gulp
-    .src("source/js/*.js")
-    .pipe(webpack(webpackConfig))
+    .src("source/js/script.js")
+    .pipe(rename('script.bundle.js'))
     .pipe(gulp.dest("build/js"));
 };
 
@@ -105,7 +112,7 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
+export const svg = () =>
   gulp
     .src(["source/img/**/*.svg", "!source/img/icons/*.svg"])
     .pipe(svgo())
@@ -128,7 +135,7 @@ const sprite = () => {
 
 export const copy = (done) => {
   gulp
-    .src(["source/fonts/*.{woff2,woff}", "source/*.php", "source/*.ico"], {
+    .src(["source/fonts/*.{woff2,woff}", "source/*.php", "source/js/*.js", "source/*.ico"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
