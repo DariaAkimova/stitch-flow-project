@@ -34,23 +34,16 @@ export const styles = () => {
 export const html = () => {
   return gulp
     .src("source/*.html")
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
+    .pipe(
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file",
+      })
+    )
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
 
-// export const htmlfull = () => {
-//   return gulp 
-//   .src(['source/*.html'])
-//   .pipe(fileinclude({
-//     prefix: '@@',
-//     basepath: '@file'
-//   }))
-//   .pipe(gulp.dest('build'));
-// }
 //scripts
 
 let webpackConfig = {
@@ -81,7 +74,7 @@ export const scripts = () => {
 //   return gulp
 //     .src("source/*.php", {read: false})
 //     .pipe(phpmin())
-//     .pipe(gulp.dest("build"));  
+//     .pipe(gulp.dest("build"));
 //   }
 
 //images

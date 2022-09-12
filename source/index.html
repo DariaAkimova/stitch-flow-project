@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css" />
-  <!-- <link rel="preload" href="fonts/arimo-medium.woff" as="font">
-  <link rel="preload" href="fonts/arimo-regular.woff" as="font">
-  <link rel="preload" href="fonts/forum-regular.woff" as="font"> -->
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/180.png">
-  <link rel="icon" href="img/favicons/192.png" type="image/png">
-  <link rel="icon" href="img/favicons/512.png" type="image/png">
-  <title>Авторская одежда с ручной вышивкой</title>
-</head>
-
+<head> @@include('./templates/head.html', { "title": "Авторская одежда с ручной вышивкой", "description": "Фатиновые  юбки-пачки с ручной вышивкой на заказ, ручная вышивка на одежде, карнавальные костюмы феи на заказ. Качественная ручна  вышивка мулине DMC в Санкт-Петербурге" })</head>
 <body>
   <header class="header">
     <div class="container">
@@ -563,7 +549,7 @@
 
   </main>
   <footer class="footer">
-   @@include('./templates/footer.html')
+    @@include('./templates/footer.html')
   </footer>
   <button class="button-up hidden" type="button" aria-label="Наверх"></button>
 
