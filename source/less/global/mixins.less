@@ -25,10 +25,9 @@
   justify-content: space-around;
 }
 
-.promo-background(@gradient, @url-img) {
-  background-color: @basic-bordo;
-  background-image: @gradient,
-    @url-img;
+.promo-background(@url-img) {
+  background: linear-gradient(to right, @basic-bordo 1%, @basic-bordo 100%);
+  background-image: @url-img;
 
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;

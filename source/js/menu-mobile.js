@@ -17,9 +17,4 @@ const openCloseMenu = () => {
 };
 
 changeMenuClass();
-//   const onNavToggleClick = () =>
 navToggle.addEventListener("click", openCloseMenu);
-
-// onNavToggleClick();
-
-//   export {changeMenuClass, onNavToggleClick};

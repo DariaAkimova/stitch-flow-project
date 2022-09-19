@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head> @@include('./templates/head.html', { "title": "Авторская одежда с ручной вышивкой", "description": "Фатиновые  юбки-пачки с ручной вышивкой на заказ, ручная вышивка на одежде, карнавальные костюмы феи на заказ. Качественная  ручная вышивка мулине DMC в Санкт-Петербурге" })</head>
+<head> @@include('./templates/head.html', { "title": "Авторская одежда с ручной вышивкой", "description": "Фатиновые юбки-пачки с ручной вышивкой на заказ, ручная вышивка на одежде, карнавальные костюмы феи на заказ. Качественная ручная вышивка мулине DMC в Санкт-Петербурге" })</head>
 
 <body>
   <header class="header">
@@ -11,7 +11,7 @@
           <picture>
             <source media="(min-width:1340px)" srcset="img/logo_desktop.svg">
             <source media="(min-width:768px)" srcset="img/logo_tablet.svg">
-            <img class="logo__img" src="img/logo_mobile.svg" width="107" height="30" alt="Name">
+            <img class="logo__img" src="img/logo_mobile.svg" width="107" height="30" alt="Логотип Stitch flow">
           </picture>
         </a>
       </div>
@@ -104,29 +104,15 @@
           <li class="all-products__item card">
 
             <div class="example__visualisation visualisation slider no-js">
-              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
-                aria-label="Вернуться к предыдущему слайду"></button>
-              <button class="slider__btn slider__btn--right slider-control slider-control--next"
-                aria-label="Перейти к следующему слайду"></button>
+              <div class="slider__background slider__background--left">
+                <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                  aria-label="Вернуться к предыдущему слайду"></button>
+              </div>
+              <div class="slider__background slider__background--right">
+                <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                  aria-label="Перейти к следующему слайду"></button>
+              </div>
               <ul class="visualisation__items slider__items">
-                <!-- <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/blue-skirt-1-desktop@1x.webp 1x, img/catalog/blue-skirt-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/blue-skirt-1-tablet@1x.webp 1x, img/catalog/blue-skirt-1-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/blue-skirt-1-mobile@1x.webp 1x,img/catalog/blue-skirt-1-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/blue-skirt-1-desktop@1x.jpg 1x, img/catalog/blue-skirt-1-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/blue-skirt-1-tablet@1x.jpg 1x, img/catalog/blue-skirt-1-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/blue-skirt-1-mobile@1x.jpg"
-                      srcset="img/catalog/blue-skirt-1-mobile@2x.jpg 2x" width="400" height="290"
-                      alt="Бирюзовая юбка с оранжевой вышивкой">
-                  </picture>
-                </li> -->
                 <li class="visualisation__item slider__item">
                   <picture>
                     <source type="image/webp" media="(min-width: 1340px)"
@@ -181,51 +167,19 @@
                       alt="Бирюзовая юбка с оранжевой вышивкой">
                   </picture>
                 </li>
-                <!-- <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/blue-skirt-5-desktop@1x.webp 1x, img/catalog/blue-skirt-5-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/blue-skirt-5-tablet@1x.webp 1x, img/catalog/blue-skirt-5-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/blue-skirt-5-mobile@1x.webp 1x, img/catalog/blue-skirt-5-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/blue-skirt-5-desktop@1x.jpg 1x, img/catalog/blue-skirt-5-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/blue-skirt-5-tablet@1x.jpg 1x, img/catalog/blue-skirt-5-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/blue-skirt-5-mobile@1x.jpg"
-                      srcset="img/catalog/blue-skirt-5-mobile@2x.jpg 2x" width="280" height="320"
-                      alt="Бирюзовая юбка с оранжевой вышивкой">
-                  </picture>
-                </li>
-                <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/blue-skirt-6-desktop@1x.webp 1x, img/catalog/blue-skirt-6-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/blue-skirt-6-tablet@1x.webp 1x, img/catalog/blue-skirt-6-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/blue-skirt-6-mobile@1x.webp 1x, img/catalog/blue-skirt-6-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/blue-skirt-6-desktop@1x.jpg 1x, img/catalog/blue-skirt-6-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/blue-skirt-6-tablet@1x.jpg 1x, img/catalog/blue-skirt-6-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/blue-skirt-6-mobile@1x.jpg"
-                      srcset="img/catalog/blue-skirt-6-mobile@2x.jpg 2x" width="280" height="320"
-                      alt="Бирюзовая юбка с оранжевой вышивкой">
-                  </picture>
-                </li> -->
               </ul>
             </div>
           </li>
           <li class="all-products__item card">
             <div class="example__visualisation visualisation slider no-js">
-              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
-                aria-label="Вернуться к предыдущему слайду"></button>
-              <button class="slider__btn slider__btn--right slider-control slider-control--next"
-                aria-label="Перейти к следующему слайду"></button>
+              <div class="slider__background slider__background--left">
+                <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                  aria-label="Вернуться к предыдущему слайду"></button>
+              </div>
+              <div class="slider__background slider__background--right">
+                <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                  aria-label="Перейти к следующему слайду"></button>
+              </div>
 
               <ul class="visualisation__items slider__items">
 
@@ -265,34 +219,20 @@
                       alt="Серо-голубая юбка со светлой вышивкой">
                   </picture>
                 </li>
-                <!-- <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/grey-blue-skirt-3-desktop@1x.webp 1x, img/catalog/grey-blue-skirt-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/grey-blue-skirt-3-tablet@1x.webp 1x, img/catalog/grey-blue-skirt-3-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/grey-blue-skirt-3-mobile@1x.webp 1x,img/catalog/grey-blue-skirt-3-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/grey-blue-skirt-3-desktop@1x.jpg 1x, img/catalog/grey-blue-skirt-3-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/grey-blue-skirt-3-tablet@1x.jpg 1x, img/catalog/grey-blue-skirt-3-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/grey-blue-skirt-3-mobile@1x.jpg"
-                      srcset="img/catalog/grey-blue-skirt-3-mobile@2x.jpg 2x" width="280" height="320"
-                      alt="Светлая вышивка на серо-голубой юбке">
-                  </picture>
-                </li> -->
-
               </ul>
+            </div>
           </li>
           <li class="all-products__item card">
 
             <div class="example__visualisation visualisation slider no-js">
-              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
-                aria-label="Вернуться к предыдущему слайду"></button>
-              <button class="slider__btn slider__btn--right slider-control slider-control--next"
-                aria-label="Перейти к следующему слайду"></button>
+              <div class="slider__background slider__background--left">
+                <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                  aria-label="Вернуться к предыдущему слайду"></button>
+              </div>
+              <div class="slider__background slider__background--right">
+                <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                  aria-label="Перейти к следующему слайду"></button>
+              </div>
               <ul class="visualisation__items slider__items">
                 <li class="visualisation__item slider__item">
                   <picture>
@@ -336,10 +276,14 @@
           <li class="all-products__item card">
 
             <div class="example__visualisation visualisation slider no-js">
-              <button class="slider__btn slider__btn--left slider-control slider-control--prev"
-                aria-label="Вернуться к предыдущему слайду"></button>
-              <button class="slider__btn slider__btn--right slider-control slider-control--next"
-                aria-label="Перейти к следующему слайду"></button>
+              <div class="slider__background slider__background--left">
+                <button class="slider__btn slider__btn--left slider-control slider-control--prev"
+                  aria-label="Вернуться к предыдущему слайду"></button>
+              </div>
+              <div class="slider__background slider__background--right">
+                <button class="slider__btn slider__btn--right slider-control slider-control--next"
+                  aria-label="Перейти к следующему слайду"></button>
+              </div>
               <ul class="visualisation__items slider__items">
                 <li class="visualisation__item slider__item">
                   <picture>
@@ -377,51 +321,19 @@
                       alt="Костюм феи детский: фатиновая юбка и накидка, украшеная бусинами и перьями">
                   </picture>
                 </li>
-                <!-- <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/fairy-dress-3-desktop@1x.webp 1x, img/catalog/fairy-dress-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/fairy-dress-3-tablet@1x.webp 1x, img/catalog/fairy-dress-3-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/fairy-dress-3-mobile@1x.webp 1x, img/catalog/fairy-dress-3-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/fairy-dress-3-desktop@1x.jpg 1x, img/catalog/fairy-dress-3-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/fairy-dress-3-tablet@1x.jpg 1x, img/catalog/fairy-dress-3-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/blue-skirt-3-mobile@1x.jpg"
-                      srcset="img/catalog/fairy-dress-3-mobile@2x.jpg 2x" width="280" height="320"
-                      alt="Костюм феи детский: фатиновая юбка и накидка, украшеная бусинами и перьями">
-                  </picture>
-                </li>
-                <li class="visualisation__item slider__item">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1340px)"
-                      srcset="img/catalog/fairy-dress-4-desktop@1x.webp 1x, img/catalog/fairy-dress-4-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/catalog/fairy-dress-4-tablet@1x.webp 1x, img/catalog/fairy-dress-4-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/catalog/fairy-dress-4-mobile@1x.webp 1x, img/catalog/fairy-dress-4-mobile@2x.webp 2x">
-
-                    <source media="(min-width:1340px)"
-                      srcset="img/catalog/fairy-dress-4-desktop@1x.jpg 1x, img/catalog/fairy-dress-4-desktop@2x.jpg 2x">
-                    <source media="(min-width:768px)"
-                      srcset="img/catalog/fairy-dress-4-tablet@1x.jpg 1x, img/catalog/fairy-dress-4-tablet@2x.jpg 2x">
-                    <img class="visualisation__image " src="img/catalog/fairy-dress-4-mobile@1x.jpg"
-                      srcset="img/catalog/fairy-dress-4-mobile@2x.jpg 2x" width="280" height="320"
-                      alt="Костюм феи детский: фатиновая юбка и накидка, украшеная бусинами и перьями">
-                  </picture>
-                </li> -->
               </ul>
             </div>
           </li>
           <!--  <li class="all-products__item card">
             <div class="example__visualisation visualisation slider no-js">
+             <div class="slider__background slider__background--left">
               <button class="slider__btn slider__btn--left slider-control slider-control--prev"
                 aria-label="Вернуться к предыдущему слайду"></button>
+              </div>
+              <div class="slider__background slider__background--right">
               <button class="slider__btn slider__btn--right slider-control slider-control--next"
                 aria-label="Перейти к следующему слайду"></button>
+                </div>
 
               <ul class="visualisation__items slider__items">
 
@@ -602,15 +514,9 @@
   </footer>
   <button class="button-up hidden" type="button" aria-label="Наверх"></button>
 
-  <!-- Увеличенное фото, слайдер -->
+  <!-- Модальное окно с увеличенным фото -->
   <template id="fancybox">
     <div class="fancybox-slider slider">
-      <!-- Временно без слайдера -->
-
-      <!-- <button class="fancybox-slider__btn fancybox-slider__btn--left slider-control slider-control--prev"
-        aria-label="Вернуться к предыдущему слайду"></button>
-      <button class="fancybox-slider__btn fancybox-slider__btn--right slider-control slider-control--next"
-        aria-label="Перейти к следующему слайду"></button> -->
       <button class="fancybox-slider__close-btn close-btn" aria-label="Закрыть"></button>
       <div class="fancybox-slider__img-box slider__item"></div>
     </div>

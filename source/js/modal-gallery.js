@@ -1,4 +1,3 @@
-// import { allPhotosList, allPhotosImages  } from "./slider.js";
 const fancyboxFragment = document
   .querySelector("#fancybox")
   .cloneNode(true).content;
@@ -53,15 +52,5 @@ const makeFancybox = (evt) => {
   addListenerClick();
   addListenerEscKeydown();
 };
-
-// Пока что сделать слайдер не получилось. Подамать еще.
-// allPhotosImages.forEach((image) => {
-//   const fancyboxImageBox = document.createElement("div");
-//   fancyboxImageBox.classList.add("fancybox-slider__img-box", "slider-item");
-//   fancyboxImageBox.appendChild(image);
-//   fancyboxSlider.appendChild(fancyboxImageBox);
-// });
-
-// makeSlider(fancyboxSlider);
 
 export { makeFancybox };
