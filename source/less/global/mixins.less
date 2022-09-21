@@ -1,6 +1,5 @@
 .container() {
-  box-sizing: content-box;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -39,18 +38,13 @@
 }
 
 .input-text(@color) {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.13;
   color: @color;
 
   @media (min-width: @tablet-width) {
     line-height: 1.5;
-    font-size: 16px;
-  }
-
-  @media (min-width: @desktop-width) {
-    line-height: 1.5;
-    font-size: 22px;
+    font-size: 14px;
   }
 }
 
@@ -64,15 +58,7 @@
   @media (min-width: @tablet-width) {
     height: 20px;
   }
-  // border-radius: 20px;
 }
-
-// .input-hidden() {
-//   position: absolute;
-//   opacity: 0;
-//   width: 0;
-//   height: 0;
-// }
 
 .footer-element-mobile(@justify-value, @padding-value) {
   display: flex;
@@ -106,6 +92,22 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.modal-wrapper(@border-color) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @white;
+  border: @border-color;
+
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 60%;
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+  }
+}
 .modal-message() {
   position: relative;
   color: @basic-bordo-dark;

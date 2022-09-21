@@ -14,19 +14,18 @@ if (isset($_POST['user-name']) && isset($_POST['phone']) && isset($_POST['email'
 
     $mail_message = $time . "\n" . 'Name:' . ' ' . $name . "\n" . 'Phone:' . ' ' . $phone . "\n" . 'email:' . ' ' . $email . "\n" . 'comments:' . ' ' . $comments . "\n";
 
+    mail($mail_to, $mail_subject, $mail_message);
 
     if ((preg_match($reg_ex_phone, $phone)) && (preg_match($reg_ex_email, $email))) {
         $dataFile = fopen('users.txt', 'a');
         fwrite($dataFile, $time . ' ' . 'Name:' . ' ' . $name . ' ' . 'Phone:' . ' ' . $phone . ' ' . 'email:' . ' ' . $email . ' ' . 'comments:' . ' ' . $comments . "\n");
         fclose($dataFile);
         echo "Спасибо, ваша заявка принята. Вы можете <a href=\"index.html\"> вернуться на сайт </a>."; /* на случай проблем с js*/
-
-        mail($mail_to, $mail_subject, $mail_message);
     } else {
         $errorFile = fopen('error.txt', 'a');
         fwrite($errorFile, $time . ' ' . 'Name:' . ' ' . $name . ' ' . 'Phone:' . ' ' . $phone . ' ' . 'email:' . ' ' . $email . "\n");
         fclose($errorFile);
-        echo " <a href=\"index.html\">Вернитесь на сайт </a> и введите корректные данные! Таже вы можете написать мне по указанным контактам."; /* на случай проблем с js*/
+        echo " <a href=\"index.html\">Вернитесь на сайт </a> и введите корректные данные! Таже вы можете написать мне по указанным контактам."; /* на случай проблем с js */
     }
 } else {
     $emptyFile = fopen('no-data.txt', 'a');

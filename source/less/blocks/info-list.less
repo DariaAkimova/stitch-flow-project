@@ -11,7 +11,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
+    font-size: 16px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -50,8 +50,12 @@
 .info-list__value {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
-  text-align: right;
+   text-align: right;
+   font-size: 1.1em;
+
+  &--important {
+ font-weight: bold;
+  }
 
   @media (min-width: @tablet-width) {
    margin-left: 0;

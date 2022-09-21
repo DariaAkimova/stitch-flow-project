@@ -20,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -55,25 +55,6 @@
     position: relative;
     width: 100%;
     text-align: center;
-
-    &::after,
-    &:first-child::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 1px;
-      left: 0;
-      right: 0;
-      background-color: @light-color;
-    }
-
-    &::after {
-      top: 44px;
-    }
-
-    &:first-child::before {
-      top: -22px;
-    }
   }
 
   @media (min-width: @tablet-width) {
