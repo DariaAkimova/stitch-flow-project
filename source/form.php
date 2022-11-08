@@ -25,24 +25,18 @@ if (isset($_POST['user-name']) && isset($_POST['phone']) && isset($_POST['email'
         fclose($sqlerrorFile);
     } else {
 
-        if (isset($spam)) {
-            $mysql->query("INSERT INTO spam_mails (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
-        } else {
+        if (empty($spam)) {
             $mysql->query("INSERT INTO users (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
             mail($mail_to, $mail_subject, $mail_message);
+        } else {
+            $mysql->query("INSERT INTO spam_mails (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
         }
     }
     $mysql->close();
 
     if ((preg_match($reg_ex_phone, $phone)) && (preg_match($reg_ex_email, $email))) {
-        $dataFile = fopen('users.txt', 'a');
-        fwrite($dataFile, $time . ' ' . 'Name:' . ' ' . $name . ' ' . 'Phone:' . ' ' . $phone . ' ' . 'email:' . ' ' . $email . ' ' . 'comments:' . ' ' . $comment . "\n");
-        fclose($dataFile);
         echo "Спасибо, ваша заявка принята. Вы можете <a href=\"index.html\"> вернуться на сайт </a>."; /* на случай проблем с js*/
     } else {
-        $errorFile = fopen('error.txt', 'a');
-        fwrite($errorFile, $time . ' ' . 'Name:' . ' ' . $name . ' ' . 'Phone:' . ' ' . $phone . ' ' . 'email:' . ' ' . $email . ' ' . $comment . "\n");
-        fclose($errorFile);
         echo " <a href=\"index.html\">Вернитесь на сайт </a> и введите корректные данные! Таже вы можете написать мне по указанным контактам."; /* на случай проблем с js */
     }
 } else {
