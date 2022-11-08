@@ -3,7 +3,7 @@
 }
 
 .error__wrapper {
-.modal-wrapper(@input-error-border);
+  .modal-wrapper(@input-error-border);
 }
 
 .error__message {
@@ -18,4 +18,13 @@
   color: @light-black;
   border: 2px solid @light-black;
   background-color: #fff;
+
+  &:hover {
+    color: @white;
+    border: none;
+  }
+
+  &:active {
+    border: none;
+  }
 }
