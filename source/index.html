@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>@@include('./templates/head.html', { "title": "Авторская одежда с ручной вышивкой", "description": "Фатиновые юбки-пачки с ручной вышивкой на заказ, ручная вышивка на одежде, карнавальные костюмы феи на заказ. Качественная ручная вышивка мулине DMC в Санкт-Петербурге" })</head>
+<head>@@include('./templates/head.html', { "title": "Авторская одежда с ручной вышивкой", "description": "Фатиновые
+  юбки-пачки с ручной вышивкой на заказ, ручная вышивка на одежде, карнавальные костюмы феи на заказ. Качественная
+  ручная вышивка мулине DMC в Санкт-Петербурге" })</head>
 
 <body>
   <header class="header">
@@ -405,10 +407,10 @@
               <dt class="info-list__parameter">Срок изготовления:</dt>
               <dd class="info-list__value">oт одного дня</dd>
             </dl>
-                      </li>
+          </li>
           <li class="info-list__item">
             <h3 class="info-list__title section-subtitle">Костюм феи детский (юбка и накидка)</h3>
-              <dl class="info-list__description">
+            <dl class="info-list__description">
               <dt class="info-list__parameter">Цена:</dt>
               <dd class="info-list__value info-list__value--important">oт 2 000 руб.</dd>
             </dl>
@@ -469,6 +471,8 @@
             <h3 class="comments__title">Ваше сообщение
             </h3>
             <textarea class="comments__field" name="comments">
+            </textarea>
+            <textarea class="hidden" name="other-comment">    <!-- Скрытое поле - защита от спама -->
             </textarea>
           </fieldset>
           <fieldset class="form__personal-agree personal-agree">

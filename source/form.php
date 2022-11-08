@@ -2,7 +2,7 @@
 $reg_ex_phone = '/^[\d\+][\d\(\)\ -]{4,14}\d$/';
 $reg_ex_email = '/^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i';
 
-$mysql= new mysqli('localhost', 'u1790818_default', 'fArU1pC015BI9ZSx', 'u1790818_stitch-flow');
+$mysql = new mysqli('localhost', 'u1790818_default', 'fArU1pC015BI9ZSx', 'u1790818_stitch-flow');
 
 $mail_subject = 'Новая заявка Stitch flow';
 $mail_to = 'stitch-flow@mail.ru';
@@ -12,22 +12,27 @@ if (isset($_POST['user-name']) && isset($_POST['phone']) && isset($_POST['email'
     $phone = trim(htmlspecialchars($_POST['phone']));
     $email = trim(htmlspecialchars($_POST['email']));
     $comment = trim(htmlspecialchars($_POST['comments']));
+    $spam = trim(htmlspecialchars($_POST['other-comment']));
     $time = date('Y-m-d H:i:s');
 
     $mail_message = $time . "\n" . 'Name:' . ' ' . $name . "\n" . 'Phone:' . ' ' . $phone . "\n" . 'email:' . ' ' . $email . "\n" . 'comments:' . ' ' . $comment . "\n";
 
     $mysql->query("SET NAMES 'utf8'");
-   $mysql_error = $mysql->connect_error;
+    $mysql_error = $mysql->connect_error;
     if ($mysql_error) {
-                $sqlErrorFile = fopen('sql-error.txt', 'a');
-        fwrite($sqlErrorFile, $time. ' ' . $mysql_error . "\n");
+        $sqlErrorFile = fopen('sql-error.txt', 'a');
+        fwrite($sqlErrorFile, $time . ' ' . $mysql_error . "\n");
         fclose($sqlerrorFile);
     } else {
-    $mysql->query("INSERT INTO users (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
+
+        if (isset($spam)) {
+            $mysql->query("INSERT INTO spam_mails (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
+        } else {
+            $mysql->query("INSERT INTO users (name, email, phone, user_comments) VALUES('$name', '$email', '$phone', '$comment')");
+            mail($mail_to, $mail_subject, $mail_message);
+        }
     }
     $mysql->close();
-
-    mail($mail_to, $mail_subject, $mail_message);
 
     if ((preg_match($reg_ex_phone, $phone)) && (preg_match($reg_ex_email, $email))) {
         $dataFile = fopen('users.txt', 'a');
